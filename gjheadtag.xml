@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+  <name>PLG_SYS_GJHEADTAG</name>
+  <author>Gruz</author>
+  <creationDate>2015-08-20</creationDate>
+  <copyright>Copyright (C) 2011 Michael Richey. All rights reserved.</copyright>
+  <license>GNU General Public License</license>
+  <authorEmail>arygroup@gmail.com</authorEmail>
+  <authorUrl>http://gruz.org.ua/en/extensions/gjheadtag.html</authorUrl>
+  <version>1.0.0</version>
+  <description>PLG_SYS_GJHEADTAG_XML_DESC</description>
+  <files>
+    <folder>language</folder>
+    <filename>README.md</filename>
+    <filename plugin="gjheadtag">gjheadtag.php</filename>
+    <filename>index.html</filename>
+  </files>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field type="textarea" name="headtags" class="textarea span12" default="&lt;meta name=&quot;application-name&quot; content=&quot;%SITENAME%&quot;&gt;" label="PLG_SYS_GJHEADTAG_HEADTAGS_LABEL" description="PLG_SYS_GJHEADTAG_HEADTAGS_DESC" size="1000" width="400" cols="200" rows="15" filter="raw"/>
+      </fieldset>
+    </fields>
+  </config>
+  <updateservers>
+    <servers type="extension" priority="1" name="gjheadtag">http://gruz.org.ua/index.php?option=com_ars&amp;view=update&amp;task=stream&amp;format=xml&amp;id=16&amp;dummy=extension.xml</servers>
+  </updateservers>
+</extension>
